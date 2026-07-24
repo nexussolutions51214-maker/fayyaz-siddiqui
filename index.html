@@ -4,54 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fayyaz Siddiqui | WordPress Developer & Front-End Developer</title>
+  <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
   <style>
-    :root { color-scheme: light dark; }
-    body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #07111f; color: #f5f7fb; line-height: 1.6; }
-    a { color: inherit; text-decoration: none; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
-    header { padding: 20px 0; }
-    nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-    nav a { margin-left: 14px; color: #cbd5e1; }
-    .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: center; padding: 40px 0 60px; }
-    .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 24px; box-shadow: 0 18px 50px rgba(0,0,0,0.2); }
-    h1, h2, h3 { margin: 0 0 12px; }
-    .tag { display: inline-block; padding: 8px 12px; border-radius: 999px; background: #2563eb; color: white; font-size: 0.9rem; margin-bottom: 16px; }
-    .btn { display: inline-block; padding: 12px 18px; border-radius: 10px; background: linear-gradient(90deg, #2563eb, #38bdf8); color: white; margin-top: 16px; }
-    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-    .skills, .experience { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 20px; }
-    .skill, .exp-item { background: rgba(255,255,255,0.05); padding: 16px; border-radius: 14px; }
-    ul { padding-left: 18px; }
-    .footer { padding: 40px 0 20px; color: #94a3b8; text-align: center; }
-    @media (max-width: 800px) { .hero, .grid, .skills, .experience { grid-template-columns: 1fr; } }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #07111f; color: #f8fafc; }
+    a { text-decoration: none; color: inherit; }
+    .page { max-width: 1200px; margin: 0 auto; padding: 24px; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; padding: 10px 0 24px; }
+    .nav a { margin-left: 18px; color: #cbd5e1; }
+    .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: center; padding: 24px 0 40px; }
+    .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 24px; box-shadow: 0 18px 50px rgba(0,0,0,0.18); }
+    .badge { display: inline-block; margin-bottom: 16px; padding: 8px 12px; border-radius: 999px; background: #2563eb; font-size: 0.9rem; }
+    .btn { display: inline-block; margin-top: 16px; padding: 12px 18px; border-radius: 10px; background: linear-gradient(90deg, #2563eb, #38bdf8); color: white; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
+    .section { margin-top: 20px; }
+    .list { padding-left: 18px; }
+    .footer { padding: 30px 0 10px; text-align: center; color: #94a3b8; }
+    @media (max-width: 900px) { .hero, .grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <nav>
-        <strong>Fayyaz Siddiqui</strong>
-        <div>
-          <a href="index.html">Home</a>
-          <a href="team.html">About</a>
-          <a href="index3.html">Services</a>
-          <a href="blog-single.html">Blog</a>
-          <a href="contact.html">Contact</a>
-        </div>
+  <div class="page">
+    <header class="topbar">
+      <strong>Fayyaz Siddiqui</strong>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="team.html">About</a>
+        <a href="index3.html">Services</a>
+        <a href="blog-single.html">Blog</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
     <section class="hero">
       <div>
-        <div class="tag">WordPress Developer • Front-End Developer</div>
+        <div class="badge">WordPress Developer • Front-End Developer</div>
         <h1>Hi, I’m Fayyaz Siddiqui.</h1>
         <h2>I build professional WordPress websites and modern front-end experiences.</h2>
-        <p>I have 2.5+ years of experience creating responsive websites, custom WordPress themes, Elementor-based pages, and clean front-end interfaces using HTML, CSS, JavaScript, Bootstrap, and PHP.</p>
+        <p>I have 2.5+ years of experience creating responsive websites, custom WordPress solutions, and polished user interfaces using HTML, CSS, JavaScript, Bootstrap, and PHP.</p>
         <a class="btn" href="contact.html">Let’s Work Together</a>
       </div>
       <div class="card">
-        <h3>What I offer</h3>
-        <ul>
-          <li>Custom WordPress website development</li>
+        <h3>What I do</h3>
+        <ul class="list">
+          <li>Custom WordPress development</li>
           <li>Theme customization and plugin integration</li>
           <li>Responsive front-end development</li>
           <li>Bootstrap, HTML, CSS, JavaScript, and PHP solutions</li>
@@ -59,37 +55,31 @@
       </div>
     </section>
 
-    <section class="card">
-      <h2>Professional Experience</h2>
-      <div class="experience">
-        <div class="exp-item">
-          <h3>WordPress Development</h3>
-          <p>Built business websites, landing pages, blogs, and custom solutions with a strong focus on performance, usability, and maintainability.</p>
+    <section class="card section">
+      <h2>About Me</h2>
+      <p>I am a dedicated WordPress developer with 2.5+ years of experience building modern websites and high-quality front-end experiences. I focus on clean code, practical functionality, and professional presentation.</p>
+      <div class="grid">
+        <div>
+          <h3>Experience</h3>
+          <p>Worked on business websites, landing pages, blogs, and custom WordPress projects with a strong emphasis on performance and usability.</p>
         </div>
-        <div class="exp-item">
-          <h3>Front-End Development</h3>
-          <p>Transformed design concepts into responsive interfaces using HTML, CSS, JavaScript, Bootstrap, and modern UI practices.</p>
-        </div>
-        <div class="exp-item">
-          <h3>PHP & Custom Solutions</h3>
-          <p>Implemented PHP-based features and integrated plugins and custom functionality to meet specific business requirements.</p>
-        </div>
-        <div class="exp-item">
-          <h3>Website Optimization</h3>
-          <p>Improved speed, responsiveness, SEO basics, and overall user experience for better website performance and presentation.</p>
+        <div>
+          <h3>Skills</h3>
+          <p>HTML, CSS, JavaScript, Bootstrap, PHP, WordPress, responsive design, plugin integration, and website optimization.</p>
         </div>
       </div>
     </section>
 
-    <section class="card" style="margin-top: 20px;">
-      <h2>Core Skills</h2>
-      <div class="skills">
-        <div class="skill">HTML5</div>
-        <div class="skill">CSS3</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Bootstrap</div>
-        <div class="skill">PHP</div>
-        <div class="skill">WordPress</div>
+    <section class="section">
+      <div class="grid">
+        <div class="card">
+          <h3>WordPress Development</h3>
+          <p>Custom WordPress websites, theme customization, and plugin-based functionality for business growth.</p>
+        </div>
+        <div class="card">
+          <h3>Front-End Development</h3>
+          <p>Responsive layouts and modern interfaces built with HTML, CSS, JavaScript, and Bootstrap.</p>
+        </div>
       </div>
     </section>
 
